@@ -12,6 +12,7 @@
             <class name="samples.testNG_demo.TestNGDemo"></class>
             <class name="samples.testNG_demo.TestNGDemo2"></class>
             <class name="samples.testNG_demo.TestNGDemo3"></class>
+            <class name="samples.selenium_action_windows_iframe.FrameComponentTest"></class>
         </classes>
     </test>
 </suite>

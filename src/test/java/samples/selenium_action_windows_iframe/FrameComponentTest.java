@@ -9,9 +9,9 @@ import org.testng.annotations.Test;
 
 import java.util.concurrent.TimeUnit;
 
-public class FrameComponent {
+public class FrameComponentTest {
 
-    @Test
+    @Test (groups = {"smoke"})
     public void frameTest() throws InterruptedException {
         WebDriver driver = new ChromeDriver();
         driver.get("https://jqueryui.com/droppable/");
@@ -32,6 +32,8 @@ public class FrameComponent {
         driver.switchTo().defaultContent();
         WebElement desEl = driver.findElement(By.cssSelector(".desc"));
         System.out.println(desEl.getText());
+
+        driver.quit();
 
 
 

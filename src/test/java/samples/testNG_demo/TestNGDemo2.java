@@ -14,7 +14,7 @@ public class TestNGDemo2 {
     @Test(groups = {"smoke"})
     public void testNGDemo2_2(){
         System.out.println("testNGDemo2_2");
-//        Assert.assertTrue(false);
+        Assert.assertTrue(false);
     }
 
     @Parameters({"URL", "APIKey", "account"})
