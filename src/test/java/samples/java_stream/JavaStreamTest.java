@@ -9,9 +9,9 @@ import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-public class JavaStreamDemo {
+public class JavaStreamTest {
     @Test
-    public void StreamFilter(){
+    public void streamFilterTest(){
         ArrayList<String> names = new ArrayList<String>();
         names.add("Donal");
         names.add("Alex");

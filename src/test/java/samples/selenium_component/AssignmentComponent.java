@@ -5,11 +5,14 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
+import org.testng.annotations.Test;
 
 import java.util.List;
 
 public class AssignmentComponent {
-    public static void main(String[] arg) throws InterruptedException {
+
+    @Test
+    public void assignment() throws InterruptedException {
         WebDriver driver = new ChromeDriver();
         driver.get("https://www.cleartrip.com/");
 

@@ -4,13 +4,16 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.Test;
 
 import java.util.Arrays;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 public class ImplicitWaitSample {
-    public static void main(String[] args) throws InterruptedException {
+
+    @Test
+    public void implicitWait() throws InterruptedException {
         WebDriver driver=new ChromeDriver();
         driver.get("https://rahulshettyacademy.com/seleniumPractise/");
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);

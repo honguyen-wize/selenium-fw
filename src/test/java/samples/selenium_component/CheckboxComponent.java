@@ -5,11 +5,13 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
+import org.testng.annotations.Test;
 
 import java.util.List;
 
 public class CheckboxComponent {
-    public static void main(String[] arg) throws InterruptedException {
+    @Test
+    public void check() throws InterruptedException {
         WebDriver driver = new ChromeDriver();
         driver.get("https://rahulshettyacademy.com/dropdownsPractise/");
         //region Checkbox
@@ -23,5 +25,9 @@ public class CheckboxComponent {
 
         Assert.assertEquals(allCheckboxes.size() , expectedCheckboxNumber ,"The number of checkbox is not correct.");
         //endregion
+
+        Thread.sleep(1000);
+        driver.quit();
+
     }
 }

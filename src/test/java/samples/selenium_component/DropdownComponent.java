@@ -6,12 +6,15 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
+import org.testng.annotations.Test;
 
 import java.util.List;
 
 public class DropdownComponent {
 
-    public static void main(String[] arg) throws InterruptedException {
+    @Test
+    public void dropdownCheck() throws InterruptedException {
+
         WebDriver driver = new ChromeDriver();
         driver.get("https://rahulshettyacademy.com/dropdownsPractise/");
 
@@ -25,6 +28,9 @@ public class DropdownComponent {
 
         dropdown.selectByIndex(2);
         System.out.println(dropdown.getFirstSelectedOption().getText());
+
+        Thread.sleep(1000);
+        driver.quit();
 
         //endregion
 

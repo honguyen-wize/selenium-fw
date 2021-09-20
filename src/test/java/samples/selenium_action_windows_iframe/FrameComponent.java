@@ -5,11 +5,14 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
+import org.testng.annotations.Test;
 
 import java.util.concurrent.TimeUnit;
 
 public class FrameComponent {
-    public static void main(String[] arg) throws InterruptedException {
+
+    @Test
+    public void frameTest() throws InterruptedException {
         WebDriver driver = new ChromeDriver();
         driver.get("https://jqueryui.com/droppable/");
 
