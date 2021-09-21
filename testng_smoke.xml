@@ -5,11 +5,10 @@
         <groups>
             <run>
                 <include name="smoke"></include>
-                <!--                <include name="regression"/>-->
             </run>
         </groups>
         <classes>
-            <class name="samples.testNG_demo.TestNGDemo"></class>
+            <class name="samples.testNG_demo.TestNGDataProvider"></class>
             <class name="samples.testNG_demo.TestNGDemo2"></class>
             <class name="samples.testNG_demo.TestNGDemo3"></class>
             <class name="samples.selenium_action_windows_iframe.FrameComponentTest"></class>

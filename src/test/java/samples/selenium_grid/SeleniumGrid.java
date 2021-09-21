@@ -19,13 +19,13 @@ public class SeleniumGrid {
     @Test
     public void seleniumGridTest() throws MalformedURLException {
         DesiredCapabilities ds = new DesiredCapabilities();
-//        ds.setBrowserName("chrome");
+        ds.setPlatform(Platform.MAC);
+
+        ds.setBrowserName("chrome");
 //      ds.setBrowserName("safari"); // no need to have safari driver, just enable "allow remote" in safari's Node machine
 
-        ds.setBrowserName("firefox");
+//        ds.setBrowserName("firefox");
 //        ds.setCapability("marionette", true);
-
-//        ds.setPlatform(Platform.MAC);
 
         WebDriver driver = new RemoteWebDriver(new URL("http://192.168.1.247:4444/wd/hub"), ds);
         driver.get("https://www.amazon.com/");

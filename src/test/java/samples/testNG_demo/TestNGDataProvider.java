@@ -3,7 +3,7 @@ package samples.testNG_demo;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-public class TestNGDemo {
+public class TestNGDataProvider {
     @Test (dataProvider = "getData")
     public void loginMutileDevices(String userName, String password){
         System.out.println("login mutile times: ");

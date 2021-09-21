@@ -8,7 +8,7 @@
             </run>
         </groups>
         <classes>
-            <class name="samples.testNG_demo.TestNGDemo"></class>
+            <class name="samples.testNG_demo.TestNGDataProvider"></class>
             <class name="samples.testNG_demo.TestNGDemo2"></class>
             <class name="samples.testNG_demo.TestNGDemo3"></class>
         </classes>
