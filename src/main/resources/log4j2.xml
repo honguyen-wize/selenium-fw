@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Configuration status="WARN">
     <Properties>
-        <Property name="basePath">src/test/java/samples/log</Property>
+        <Property name="basePath">logs</Property>
     </Properties>
     <Appenders>
         <RollingFile name="File" fileName="${basePath}/prints.log"
@@ -11,19 +11,10 @@
             </PatternLayout>
             <SizeBasedTriggeringPolicy size="500" />
         </RollingFile>
-        <Console name="Console" target="SYSTEM_OUT">
-            <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - CONSOLE - %msg%n"/>
-        </Console>
     </Appenders>
     <Loggers>
-        <Logger name="samples.log.Log4jDemo" level="error" additivity="false">
+        <Root level="trace"><!--level could be "trace/info/debug/error" -->
             <AppenderRef ref="File"/>
-        </Logger>
-        <Logger name="samples.log.Log4jDemo2" level="info" additivity="false">
-            <AppenderRef ref="File"/>
-        </Logger>
-        <Root level="trace"><!-- Log at any other classes, level could be "trace/info/debug/error" -->
-            <AppenderRef ref="Console"/>
         </Root>
     </Loggers>
 </Configuration>

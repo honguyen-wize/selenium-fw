@@ -2,16 +2,16 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="All Test Suite">
     <listeners>
-        <listener class-name="samples.testNG_demo.Listeners"></listener>
+        <listener class-name="academy.utils.Listeners"></listener>
     </listeners>
-    <test name="Loan">
+    <test name="HomeTest">
         <classes>
-            <class name="samples.testNG_demo.TestNGDemo3"></class>
+            <class name="academy.tests.HomePageTest"></class>
         </classes>
     </test>
-    <test name="Login">
+    <test name="Login Test">
         <classes>
-            <class name="samples.testNG_demo.TestNGDemo2"></class>
+            <class name="academy.tests.LoginTest"></class>
         </classes>
     </test>
 </suite>
