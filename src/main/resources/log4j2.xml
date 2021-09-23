@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Configuration status="WARN">
     <Properties>
-        <Property name="basePath">src/test/java/samples/log</Property>
+        <Property name="basePath">log</Property>
     </Properties>
     <Appenders>
         <RollingFile name="File" fileName="${basePath}/prints.log"
@@ -16,14 +16,15 @@
         </Console>
     </Appenders>
     <Loggers>
-        <Logger name="samples.log.Log4jDemo" level="error" additivity="false">
-            <AppenderRef ref="File"/>
-        </Logger>
-        <Logger name="samples.log.Log4jDemo2" level="info" additivity="false">
-            <AppenderRef ref="File"/>
-        </Logger>
+<!--        <Logger name="samples.log.Log4jDemo" level="error" additivity="false">-->
+<!--            <AppenderRef ref="File"/>-->
+<!--        </Logger>-->
+<!--        <Logger name="samples.log.Log4jDemo2" level="info" additivity="false">-->
+<!--            <AppenderRef ref="File"/>-->
+<!--        </Logger>-->
         <Root level="trace"><!-- Log at any other classes, level could be "trace/info/debug/error" -->
             <AppenderRef ref="Console"/>
+            <AppenderRef ref="File"/>
         </Root>
     </Loggers>
 </Configuration>
