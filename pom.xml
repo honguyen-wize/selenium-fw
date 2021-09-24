@@ -8,7 +8,7 @@
     <version>1.0-SNAPSHOT</version>
     <profiles>
         <profile>
-            <id>regression</id>
+            <id>normal</id>
             <build>
                 <pluginManagement>
                     <plugins>
@@ -18,7 +18,7 @@
                             <version>3.0.0-M5</version>
                             <configuration>
                                 <suiteXmlFiles>
-                                    <suiteXmlFile>testng_regression.xml</suiteXmlFile>
+                                    <suiteXmlFile>testng.xml</suiteXmlFile>
                                 </suiteXmlFiles>
                             </configuration>
                         </plugin>
@@ -27,7 +27,7 @@
             </build>
         </profile>
         <profile>
-            <id>smoke</id>
+            <id>cucumber</id>
             <build>
                 <pluginManagement>
                     <plugins>
@@ -37,7 +37,7 @@
                             <version>3.0.0-M5</version>
                             <configuration>
                                 <suiteXmlFiles>
-                                    <suiteXmlFile>testng_smoke.xml</suiteXmlFile>
+                                    <suiteXmlFile>testngCucumber.xml</suiteXmlFile>
                                 </suiteXmlFiles>
                             </configuration>
                         </plugin>
@@ -112,6 +112,22 @@
             <groupId>commons-io</groupId>
             <artifactId>commons-io</artifactId>
             <version>2.11.0</version>
+        </dependency>
+        <dependency>
+            <groupId>info.cukes</groupId>
+            <artifactId>cucumber-junit</artifactId>
+            <version>1.2.5</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>info.cukes</groupId>
+            <artifactId>cucumber-java</artifactId>
+            <version>1.2.5</version>
+        </dependency>
+        <dependency>
+            <groupId>info.cukes</groupId>
+            <artifactId>cucumber-testng</artifactId>
+            <version>1.2.5</version>
         </dependency>
     </dependencies>
 </project>
